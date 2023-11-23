@@ -26,9 +26,12 @@ html, body{
 
 header{
     width: 100%;
-    height: 10.6vh;
+    height: 9.6vh;
     padding: .2vw 12%;
-    background: transparent;
+    background: linear-gradient(130.08deg,#292928 0%,#181818 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    border-radius:30px;
     transition: all .50s ease-in-out;
     z-index: 100;
     position: fixed;
@@ -44,7 +47,7 @@ header{
 .navbar .logo a{
     color: var(--text-color);
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
 }
 .navbar .logo span{
     color: var(--main-color);
@@ -129,21 +132,18 @@ section .left_section{
     line-height: 30px;
     margin:1.5vw 1vw;
 }
-.btn a{
+.btn{
     display: inline-block;
-    margin: .5vw 1vw;
-    margin-left: 25vw;
-    padding: 1vw 2vw;
+    padding: 14px 34px;
     background: var(--main-color);
     color: var(--text-color);
     border: 2px solid var(--main-color);
-    font-size: 1.5vw;
+    font-size: 16px;
     font-weight: 600;
     border-radius: 8px;
     transition: all .6s ease-in-out ;
-
 }
-.btn a:hover{
+.btn:hover{
     transform: translateY(-5px);
     background: transparent;
     color:var(--main-color) ;
@@ -160,11 +160,21 @@ height: 100%;
     margin-left: 4vw;
 }
 
+
+
+
+
+
+
+
+
+
 @media (max-width: 920px) {
     header{
         padding: .2vw 6%;
         display: block;
         position: fixed;
+        border-radius: 10px;
         z-index: 99;
     }
     .menu{
@@ -174,44 +184,40 @@ height: 100%;
 
     .nright {
         position: absolute;
-        top: 100%;
-        right: 2%;
-        width: 50vw;
-        height: 31vh;
-        background-color:var(--main-color);
+        top: 19.6vw;
+        right: -100%;
+        width: 100vw;
+        height:93vh ;
+        background: linear-gradient(130.08deg,#292928 0%,#181818 100%);
         border-radius: 10px;
-        transition: all .50s ease;
+        transition: all .5s ease-in-out;
         opacity: 0;
+        display: flex;
+        justify-content: center;
 
     } 
     .nright ul{
-        margin-top: 3vw;
-        margin-left: 13.5vw;
         display: flex;
         flex-direction: column;
         transition: all .50s ease; 
+        margin-top: 40vw;
     }
     .nright ul a{
         color: var(--text-color);
         font-weight: 800;
-        font-size: 4.5vw;
-            transition: all.50s ease;
-    }
-    .nright ul a:hover{
-        color: var(--main-color);
-        
-    }
-    
-    .nright li{
-        padding: 2vw 1vw;
-    }
+        font-size: 8.5vw;
+        transition: all.50s ease;
+        letter-spacing: .8vw;
+        line-height: 18vw;
+        cursor:pointer;
+    } 
     #menu-icon{
         font-size: 12vw;
     } 
 
     .nright.open{
         opacity: 1;
-        background-color: red;
+        right: 1%;
     }
 
 /* Sectiion */
@@ -245,12 +251,16 @@ section .left_section{
     line-height: 30px;
     margin:.2vw 7vw;
 }
-.btn a{
-    display: inline-block;
-    margin: 10vw 10vw;
-    margin-left: 25vw;
-    padding: 1vw 2vw;
-    font-size: 6.5vw;
+
+.btn_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 0vw;
+}
+.btn{
+    padding: 12px 24px;
+    font-size: 18px;
 }
 
 .profile_img{
@@ -263,25 +273,6 @@ margin-bottom: 8vh;
 .profile_img img{
     margin-left: 10vw;
 }
-
-
-
-
-
-
-
-
-
-.Section.call{
-    top:100vh;
-    background-color: red;
-}
-
-.left_section_container h1.change{
-    background-color: red;
-}
-
-
 
 
 
